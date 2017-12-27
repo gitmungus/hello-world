@@ -1,49 +1,28 @@
 package com.palser;
 
-import java.math.BigInteger;
+import com.vince.Car;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.GregorianCalendar;
 
 public class Main {
 
-    private static int xxx = 10;
 
-    public static void main(String[] args)
+    public static void main(String[] args) throws Exception
     {
-        String x = "Hello";
+        SimpleDateFormat format1 =  new SimpleDateFormat("HH:mm");
+        SimpleDateFormat format2 = new SimpleDateFormat("kk:mm");
+        Date date = new GregorianCalendar(2001, 0, 1, 1, 2 , 0 ).getTime();
 
-        int y = 0;
+        System.out.println(format1.format(date));
+        System.out.println(format2.format(date));
 
-        ++y;
+        Car volvo = new Car();
+        System.out.println("Ben" + volvo.engine.toString());
+        volvo.print(10);
 
-        System.out.println(y);
-        fff    = "Goodbye";
-
-        boolean value = true;
-
-
-        String hi = "hI MATE"; // immutable string
-        hi = hi + "what now"; // a new string!!
-        System.out.println(hi);
-        {
-            String v;
-            v = "Helllo";
-
-
-        }
-
-        {
-            String v = "oioijo";
-
-        }
-
-        String v = "sdsdg";
-
-        BigInteger rrx;
-        rrx = BigInteger.valueOf(10000000);
-
-
-        System.out.println("Hello, world!");// write your code here
-        System.out.println(xxx);// write your code here
-        System.out.println(xxx++);// write your code here
-        System.out.println(++xxx);// write your code here
     }
 }
